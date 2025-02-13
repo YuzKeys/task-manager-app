@@ -2,12 +2,12 @@
   "name": "task-manager-app",
   "version": "0.1.0",
   "description": "une petite application web qui permet d'ajouter, de lister et de supprimer des tâches.",
-  "main": "app.js",
-  "type": "module",
+  "main": "dist/server.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,7 @@
     "prettier": "^3.5.0",
     "sass": "^1.84.0",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.3"
   }
 }
