@@ -1,0 +1,45 @@
+{
+  "name": "task-manager-app",
+  "version": "0.1.0",
+  "description": "une petite application web qui permet d'ajouter, de lister et de supprimer des tâches.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuzKeys/task-manager-app.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js"
+  ],
+  "author": "Youssef Larbi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuzKeys/task-manager-app/issues"
+  },
+  "homepage": "https://github.com/YuzKeys/task-manager-app#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.2",
+    "eslint": "^9.20.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.0",
+    "sass": "^1.84.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
